@@ -58,7 +58,7 @@ TWITTER_API_SECRET="my-twitter-api-secret"
 GITHUB_ACCESS_token="my-github-access-token"
 ```
 
-At the top of our program, we need to tell the dotenv gem to load this while,
+At the top of our program, we need to tell the dotenv gem to load the .env file,
 which we do like so:
 
 ```ruby
