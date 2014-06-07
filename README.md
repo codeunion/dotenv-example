@@ -7,6 +7,7 @@
 3. [How dotenv works](#how-dotenv-works)
 4. [Making git Ignore .env](#making-git-ignore-env)
 5. [Other Solutions to The "Sensitive Information" Problem](#other-solutions-to-the-sensitive-information-problem)
+
 ## What is dotenv?
 
 The [dotenv gem](https://github.com/bkeepers/dotenv) makes it easy to load
