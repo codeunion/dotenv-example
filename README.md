@@ -58,6 +58,10 @@ TWITTER_API_SECRET="my-twitter-api-secret"
 GITHUB_ACCESS_token="my-github-access-token"
 ```
 
+**Note**: Environment variables don't *need* to be given names in all caps,
+but that's the convention. You will throw other people off if you don't follow
+the same convention.
+
 At the top of our program, we need to tell the dotenv gem to load the .env file,
 which we do like so:
 
