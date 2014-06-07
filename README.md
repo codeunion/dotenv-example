@@ -56,7 +56,7 @@ project.  It might look like this:
 TWITTER_API_KEY="my-twitter-api-key"
 TWITTER_API_SECRET="my-twitter-api-secret"
 
-GITHUB_ACCESS_token="my-github-access-token"
+GITHUB_ACCESS_TOKEN="my-github-access-token"
 ```
 
 **Note**: Environment variables don't *need* to be given names in all caps,
