@@ -101,7 +101,14 @@ as if it simply didn't exist.
 
 ## Other Solutions to The "Sensitive Information" Problem
 
-dotenv isn't the only solution to the "sensitive information" problem.  There
+In every case, every solution to the "sensitive information" problem follows the
+same fundamental pattern:
+
+1. Separate your sensitive information from your program
+2. Have your program load the file with sensitive information
+3. Tell git to ignore that file
+
+That said, dotenv isn't the only solution to this problem.  There
 are other gems like [figaro](https://github.com/laserlemon/figaro) which do
 much the same thing, for example.
 
@@ -117,9 +124,3 @@ You'd have to write your own code to load the file, although in the case the Rub
 The nice thing about using environment variables is that they use a standard
 interface available to *any* program and can be changed without modifying
 a file in an idiomatic, project-specific format.
-
-Regardless, the fundamental pattern remains the same:
-
-1. Separate your sensitive information from your program
-2. Have your program load the file with sensitive information
-3. Tell git to ignore that file
