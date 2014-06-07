@@ -6,7 +6,7 @@
 2. [Getting Started](#getting-started)
 3. [How dotenv works](#how-dotenv-works)
 4. [Making git Ignore .env](#making-git-ignore-env)
-
+5. [Other Solutions to The "Sensitive Information" Problem](#other-solutions-to-the-sensitive-information-problem)
 ## What is dotenv?
 
 The [dotenv gem](https://github.com/bkeepers/dotenv) makes it easy to load
@@ -97,3 +97,28 @@ See our [example .gitignore file](.gitignore).
 "Ignore" means git will really, *really* ignore the file.  You couldn't commit a
 file whose name was in `.gitignore` even if you tried.  Git will treat the file
 as if it simply didn't exist.
+
+## Other Solutions to The "Sensitive Information" Problem
+
+dotenv isn't the only solution to the "sensitive information" problem.  There
+are other gems like [figaro](https://github.com/laserlemon/figaro) which do
+much the same thing, for example.
+
+If you don't want to or can't use a gem to separate sensitive information from
+your project, there are a few other options.  A common pattern is to create a
+configuration file in an easy-to-ready format like [YAML](http://en.wikipedia.org/wiki/YAML)
+called, say, `credentials.yml`.  You would then store sensitive information in
+that file and add that file to `.gitignore`, so that you couldn't accidentally
+push it up to GitHub or otherwise reveal its contents.
+
+You'd have to write your own code to load the file, although in the case the Ruby standard library comes with a [a library to parse YAML](http://ruby-doc.org/stdlib-2.0.0/libdoc/yaml/rdoc/YAML.html).
+
+The nice thing about using environment variables is that they use a standard
+interface available to *any* program and can be changed without modifying
+a file in an idiomatic, project-specific format.
+
+Regardless, the fundamental pattern remains the same:
+
+1. Separate your sensitive information from your program
+2. Have your program load the file with sensitive information
+3. Tell git to ignore that file
