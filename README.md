@@ -114,7 +114,7 @@ for example.
 
 If you don't want to or can't use a gem to separate sensitive information from
 your project, there are a few other options.  A common pattern is to create a
-configuration file in an easy-to-ready format like [YAML](http://en.wikipedia.org/wiki/YAML)
+configuration file in an easy-to-read format like [YAML](http://en.wikipedia.org/wiki/YAML)
 called, say, `credentials.yml`.  You would then store sensitive information in
 that file and add that file to `.gitignore`, so that you couldn't accidentally
 push it up to GitHub or otherwise reveal its contents.
