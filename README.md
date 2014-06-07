@@ -101,16 +101,16 @@ as if it simply didn't exist.
 
 ## Other Solutions to The "Sensitive Information" Problem
 
-In every case, every solution to the "sensitive information" problem follows the
-same fundamental pattern:
+Every solution to the "sensitive information" problem follows the same
+fundamental pattern:
 
 1. Separate your sensitive information from your program
 2. Have your program load the file with sensitive information
 3. Tell git to ignore that file
 
-That said, dotenv isn't the only solution to this problem.  There
-are other gems like [figaro](https://github.com/laserlemon/figaro) which do
-much the same thing, for example.
+That said, dotenv isn't the only solution.  There are other gems like
+[figaro](https://github.com/laserlemon/figaro) which are very similar to dotenv,
+for example.
 
 If you don't want to or can't use a gem to separate sensitive information from
 your project, there are a few other options.  A common pattern is to create a
