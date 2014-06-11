@@ -42,7 +42,9 @@ To get started
    bundle install
    ```
 
-   to install the necessary gems.
+   to install the necessary gems.  If this doesn't work, either the "bundler"
+   gem isn't installed or there is something wrong with your Ruby installation.
+   Let us know!
 5. Run
 
    ```
