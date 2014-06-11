@@ -30,7 +30,7 @@ To get started
 2. Clone this repository (or your fork) onto your local computer
 3. If you haven't installed the "bundler" gem yet, do so now by running
 
-   ```
+   ```bash
    gem install bundler
    ```
 
@@ -38,7 +38,7 @@ To get started
    gem provides the `bundle` command.
 4. In the `dotenv-example` directory, run
 
-   ```
+   ```bash
    bundle install
    ```
 
@@ -47,7 +47,7 @@ To get started
    Let us know!
 5. Run
 
-   ```
+   ```bash
    ruby example.rb
    ```
 
