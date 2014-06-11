@@ -28,14 +28,22 @@ To get started
 
 1. Fork this repository if you want your own copy to play with
 2. Clone this repository (or your fork) onto your local computer
-3. In the `dotenv-example` directory, run
+3. If you haven't installed the "bundler" gem yet, do so now by running
+
+   ```
+   gem install bundler
+   ```
+
+   It's ok to run this even if bundler is already installed.  The "bundler"
+   gem provides the `bundle` command.
+4. In the `dotenv-example` directory, run
 
    ```
    bundle install
    ```
 
    to install the necessary gems.
-4. Run
+5. Run
 
    ```
    ruby example.rb
